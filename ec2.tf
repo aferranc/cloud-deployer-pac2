@@ -60,12 +60,11 @@ resource "aws_alb_target_group" "http-tg" {
 }
 
 # Target Group Attachment with Instance
-
-#resource "aws_alb_target_group_attachment" "tgattachment" {
-#  target_group_arn = aws_lb_target_group.http-tg.arn
-#  target_id        = aws_instance.instance1.id
-#  port             = 80
-#}
+resource "aws_alb_target_group_attachment" "tgattachment" {
+  target_group_arn = aws_alb_target_group.http-tg.arn
+  target_id        = aws_instance.instance1.id
+  port             = 80
+}
 
 # Load balancer HTTP listener 
 resource "aws_alb_listener" "listener_http" {
