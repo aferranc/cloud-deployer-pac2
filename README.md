@@ -6,8 +6,8 @@ Desplegar un blog amb el CMS Wordpress en el cloud públic de Amazon Web Service
 
 Els requeriments de seguretat són els següents:
 
-  a) L’accés a la màquina EC2 només es podrà realitzar mitjançant claus SSH
-  b) Creació d’un Security Group que garanteixi que el servidor EC2 només té oberts els següents ports 80 (HTTP), 443 (HTTPS) i 22 (SSH)
+  - L’accés a la màquina EC2 només es podrà realitzar mitjançant claus SSH
+  - Creació d’un Security Group que garanteixi que el servidor EC2 només té oberts els següents ports 80 (HTTP), 443 (HTTPS) i 22 (SSH)
 
 ## Crear les claus rsa
 
